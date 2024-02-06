@@ -1,0 +1,48 @@
+#CUDA_VISIBLE_DEVICES=0 python ContextDiff_finetune.py --config config/rose.yaml
+pretrained_model_path: "ckpt/stable-diffusion-v1-4"
+
+dataset_config:
+    path: "data/sunflower"
+    prompt: "a yellow sunflower"
+    start_sample_frame: 0
+    n_sample_frame: 8
+    sampling_rate: 1
+
+
+editing_config:
+    use_invertion_latents: True
+    use_inversion_attention: True
+    guidance_scale: 7.5
+    editing_prompts: [
+        a yellow sunflower,
+        a red rose,
+        a white carnation,
+    ]
+    clip_length: "${..dataset_config.n_sample_frame}"
+    sample_seeds: [12734]
+    
+    num_inference_steps: 50 # 15 minutes
+    strength: 0.99
+
+trainer_pipeline_config:
+    target: video_diffusion.trainer.ddpm_trainer.DDPMTrainer
+
+test_pipeline_config:
+    target: video_diffusion.pipelines.ddim_spatial_temporal.DDIMSpatioTemporalStableDiffusionPipeline
+
+model_config:
+    lora: 160
+    # temporal_downsample_time: 4
+    # SparseCausalAttention_index: [-1, 1, 'first', 'last'] 
+
+enable_xformers: True
+mixed_precision: 'fp16'
+gradient_checkpointing: True
+
+train_steps: 200
+validation_steps: 50 # 10 minutes
+checkpointing_steps: 50
+seed: 0
+learning_rate: 1e-5
+# prior_preservation: 1.0
+train_temporal_conv: True
