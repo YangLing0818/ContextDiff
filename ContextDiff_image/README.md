@@ -100,3 +100,14 @@ CUDA_VISIBLE_DEVICES=0 finetune_diffusion.py --pretrained_model_name_or_path="st
 ```
 
 For the '--mean_path' and '--std_path' in the code, it is generated from the dataset embeddings. You can use cluster method like GMM to obtain std and mean from your datasets.
+
+## Citation
+```
+@inproceedings{
+yang2024crossmodal,
+title={Cross-Modal Contextualized Diffusion Models for Text-Guided Visual Generation and Editing},
+author={Ling Yang and Zhilong Zhang and Zhaochen Yu and Jingwei Liu and Minkai Xu and Stefano Ermon and Bin CUI},
+booktitle={International Conference on Learning Representations},
+year={2024}
+}
+```
