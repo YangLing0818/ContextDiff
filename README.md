@@ -65,21 +65,6 @@ We propose a novel and general cross-modal contextualized diffusion model (**Con
 
 <table class="center">
         <tr style="line-height: 0">
-    <td width=25% style="border: none; text-align: center">Source(Jeep)</td>
-    <td width=25% style="border: none; text-align: center">Edited(Snow)</td>
-    <td width=25% style="border: none; text-align: center">Source(Jeep)</td>
-    <td width=25% style="border: none; text-align: center">Edited(Porsche)</td>
-    </tr>
-    <tr>
-    <td width=25% style="border: none"><img src="figs/demo/jeep.gif" style="width:100%"></td>
-    <td width=25% style="border: none"><img src="figs/demo/snow.gif" style="width:100%"></td>
-    <td width=25% style="border: none"><img src="figs/demo/jeep.gif" style="width:100%"></td>
-    <td width=25% style="border: none"><img src="figs/demo/porsche.gif" style="width:100%"></td>
-    </tr>
-</table>
-
-<table class="center">
-        <tr style="line-height: 0">
     <td width=25% style="border: none; text-align: center">Source(Schnauzer)</td>
     <td width=25% style="border: none; text-align: center">Edited(Golden)</td>
     <td width=25% style="border: none; text-align: center">Source(Schnauzer)</td>
@@ -195,3 +180,15 @@ result
 ```
 
 To see the text-to-image part of our ContextDiff, see [./ContextDiff_image](./ContextDiff_image)
+
+## Citation
+```
+@inproceedings{
+yang2024crossmodal,
+title={Cross-Modal Contextualized Diffusion Models for Text-Guided Visual Generation and Editing},
+author={Ling Yang and Zhilong Zhang and Zhaochen Yu and Jingwei Liu and Minkai Xu and Stefano Ermon and Bin CUI},
+booktitle={International Conference on Learning Representations},
+year={2024}
+}
+```
+
