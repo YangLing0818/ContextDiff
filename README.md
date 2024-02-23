@@ -183,12 +183,11 @@ To see the text-to-image part of our ContextDiff, see [./ContextDiff_image](./Co
 
 ## Citation
 ```
-@inproceedings{
-yang2024crossmodal,
-title={Cross-Modal Contextualized Diffusion Models for Text-Guided Visual Generation and Editing},
-author={Ling Yang and Zhilong Zhang and Zhaochen Yu and Jingwei Liu and Minkai Xu and Stefano Ermon and Bin CUI},
-booktitle={International Conference on Learning Representations},
-year={2024}
+@inproceedings{yang2024crossmodal,
+  title={Cross-Modal Contextualized Diffusion Models for Text-Guided Visual Generation and Editing},
+  author={Ling Yang and Zhilong Zhang and Zhaochen Yu and Jingwei Liu and Minkai Xu and Stefano Ermon and Bin CUI},
+  booktitle={International Conference on Learning Representations},
+  year={2024}
 }
 ```
 
