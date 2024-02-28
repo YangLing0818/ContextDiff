@@ -44,7 +44,7 @@ We propose a novel and general cross-modal contextualized diffusion model (**Con
 
 ## 🚩 New Updates 
 
-**[2024.1]** Our main code along with demo videos is released, including **text-to-image generation, and text-guided video editing**.
+**[2024.1]** Our main code along with demo images and videos is released.
 
 ## Gallery
 
