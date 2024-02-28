@@ -40,7 +40,7 @@ samples, as evidenced by quantitative and qualitative evaluations.
   </tr>
 </table>
 
-We propose a novel and general cross-modal contextualized diffusion model (**ContextDiff**) that harnesses cross-modal context to facilitate the learning capacity of cross-modal diffusion models, including **text-to-image generation, and text-guided video editing**.
+We propose a novel and general cross-modal contextualized diffusion model (**ContextDiff**) that harnesses cross-modal context to facilitate the learning capacity of cross-modal diffusion models, including **[text-to-image generation](./ContextDiff_image), and text-guided video editing**.
 
 ## 🚩 New Updates 
 
@@ -179,7 +179,7 @@ result
 ......
 ```
 
-To see the text-to-image part of our ContextDiff, see [./ContextDiff_image](./ContextDiff_image)
+
 
 ## Citation
 ```
