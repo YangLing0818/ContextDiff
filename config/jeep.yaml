@@ -1,5 +1,5 @@
 # CUDA_VISIBLE_DEVICES=0 python ContextDiff_finetune.py --config config/jeep.yaml
-pretrained_model_path: "ckpt/stable-diffusion-v1-4"
+pretrained_model_path: "ckpt/stable-diffusion-v1-5"
 
 dataset_config:
     path: "data/jeep"
