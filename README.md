@@ -127,8 +127,9 @@ We propose a novel and general cross-modal contextualized diffusion model (**Con
 **Environment Setup**
 
 ```bash
-git clone xxxx
+git clone https://github.com/YangLing0818/ContextDiff.git
 conda create -n ContextDiff python==3.8
+conda activate ContextDiff
 pip install -r requirements.txt
 pip install git+https://github.com/openai/CLIP.git
 ```
