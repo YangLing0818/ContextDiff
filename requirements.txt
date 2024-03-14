@@ -31,3 +31,4 @@ torchdiffeq
 python-etcd
 Jinja2
 joblib
+huggingface_hub
