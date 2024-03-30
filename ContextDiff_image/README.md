@@ -1,50 +1,6 @@
 ## Cross-Modal Contextualized Diffusion Models for Text-Guided Visual Generation and Editing
 
-This repository contains the official implementation of  [ContextDiff](https://openreview.net/forum?id=nFMS6wF2xq)
-
->[**Cross-Modal Contextualized Diffusion Models for Text-Guided Visual Generation and Editing**](https://openreview.net/forum?id=nFMS6wF2xq)    
->[Ling Yang](https://yangling0818.github.io/), 
->[Zhilong Zhang](),
->[Zhaochen Yu](https://github.com/BitCodingWalkin), 
->[Jingwei Liu](),
->[Minkai Xu](https://minkaixu.com/),
->[Stefano Ermon](https://cs.stanford.edu/~ermon/), 
->[Bin Cui](https://cuibinpku.github.io/) 
-<br>**Peking University, Stanford University**<br>
-
-<details>
-    <summary>Click for full abstract</summary>
-    Conditional diffusion models have exhibited superior performance in high-fidelity
-text-guided visual generation and editing. Nevertheless, prevailing text-guided visual diffusion models primarily focus on incorporating text-visual relationships
-exclusively into the reverse process, often disregarding their relevance in the forward process. This inconsistency between forward and reverse processes may
-limit the precise conveyance of textual semantics in visual synthesis results. To
-address this issue, we propose a novel and general contextualized diffusion model
-(CONTEXTDIFF) by incorporating the cross-modal context encompassing interactions and alignments between text condition and visual sample into forward and
-reverse processes. We propagate this context to all timesteps in the two processes
-to adapt their trajectories, thereby facilitating cross-modal conditional modeling.
-We generalize our contextualized diffusion to both DDPMs and DDIMs with theoretical derivations, and demonstrate the effectiveness of our model in evaluations
-with two challenging tasks: text-to-image generation, and text-to-video editing.
-In each task, our CONTEXTDIFF achieves new state-of-the-art performance, significantly enhancing the semantic alignment between text condition and generated
-samples, as evidenced by quantitative and qualitative evaluations.
-</details>
-
-## Introduction
-
-<table class="center">
-    <tr>
-    <td width=100% style="border: none"><img src="figs/Illustration.png" style="width:100%"></td>
-    </tr>
-    <tr>
-    <td width="100%" style="border: none; text-align: center; word-wrap: break-word">Overview of our ContextDiff
-</td>
-  </tr>
-</table>
-
-We propose a novel and general cross-modal contextualized diffusion model (**ContextDiff**) that harnesses cross-modal context to facilitate the learning capacity of cross-modal diffusion models, including **text-to-image generation, and text-guided video editing**.
-
-## 🚩 New Updates 
-
-**[2024.1]** Our main code along with demo videos is released, including **text-to-image generation, and text-guided video editing**.
+This repository contains the official implementation of text-to-image part in [ContextDiff](https://openreview.net/forum?id=nFMS6wF2xq). **Here, we only provide a sample code on COCO dataset for simplicity, and you may change to any datasets to apply our method.**
 
 
 ## Preparations
