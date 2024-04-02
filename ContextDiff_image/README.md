@@ -8,7 +8,7 @@ This repository contains the official implementation of text-to-image part in [C
 **Environment Setup**
 
 ```bash
-git clone xxxx
+git clone https://github.com/YangLing0818/ContextDiff.git
 conda create -n ContextDiff python==3.8
 pip install -r requirements.txt
 cd ContextDiff_image
@@ -55,7 +55,7 @@ CUDA_VISIBLE_DEVICES=0 finetune_diffusion.py --pretrained_model_name_or_path="st
 --output_dir="./output"
 ```
 
-For the '--mean_path' and '--std_path' in the code, it is generated from the dataset embeddings. You can use cluster method like GMM to obtain std and mean from your datasets.
+For the '--mean_path' and '--std_path' in the code, it is generated from the dataset embeddings. You can use cluster method like GMM to obtain std and mean from your datasets. This method could help to accelerate the speed of training convergence by optimizing denoising starting point from pure Gaussian distribution to the image distribution of the training dataset. You can also directly create means and variances that conform to an isotropic Gaussian distribution.
 
 ## Citation
 ```
