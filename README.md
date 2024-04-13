@@ -164,7 +164,7 @@ You can reproduce our video editing results by running:
 CUDA_VISIBLE_DEVICES=0 python ContextDiff_finetune.py --config config/rose.yaml
 ```
 
-You can also try your own video samples by using personalized config file, you should use put the video frames into '[./data](./data)' folders, and config file into '[./config](./config)'
+You can also try your own video samples by using personalized config file, you should use put the video frames into '[./data](./data)' folders, and config file into '[./config](./config)'. Please note that **using the adapter/shifter pretrained from [text-to-image generation part](./ContextDiff_image)** would further eanhance semantic alignment of the edited videos.
 
 The edited videos and finetuned checkpoint are placed in './result'
 
