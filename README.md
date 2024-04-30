@@ -46,7 +46,10 @@ We propose a novel and general cross-modal contextualized diffusion model (**Con
 
 **[2024.1]** Our main code along with demo images and videos is released.
 
-## Gallery
+## Text-to-Image Generation
+![Alt text](./figs/image-1.png)
+
+## Text-to-Video Synthesis
 
 <table class="center">
         <tr style="line-height: 0">
@@ -121,6 +124,7 @@ We propose a novel and general cross-modal contextualized diffusion model (**Con
     <td width=25% style="border: none"><img src="figs/demo/blackswan.gif" style="width:100%"></td>
     </tr>
 </table>
+
 
 ## Preparations
 
