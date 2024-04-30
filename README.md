@@ -1,6 +1,6 @@
-## Cross-Modal Contextualized Diffusion Models for Text-Guided Visual Generation and Editing
+## Cross-Modal Contextualized Diffusion Models for Text-Guided Visual Generation and Editing - ICLR 2024
 
-This repository contains the official implementation of  [ContextDiff](https://openreview.net/forum?id=nFMS6wF2xq)
+This repository contains the official implementation of  [ContextDiff](https://openreview.net/forum?id=nFMS6wF2xq) published in ICLR 2024.
 
 >[**Cross-Modal Contextualized Diffusion Models for Text-Guided Visual Generation and Editing**](https://openreview.net/forum?id=nFMS6wF2xq)    
 >[Ling Yang](https://yangling0818.github.io/), 
