@@ -86,13 +86,13 @@ class DDIMSpatioTemporalStableDiffusionPipeline(SpatioTemporalStableDiffusionPip
 
         # get latents
         init_latents_bcfhw = rearrange(init_latents, "(b f) c h w -> b c f h w", b=batch_size)
-        ddim_latents_all_step = self.ddim_clean2noisy_loop(init_latents_bcfhw, text_embeddings)
-        # if context_shift is not None:
-        #     print('use context_shift')
-        #     print(str(context_shift.shape))
-        #     ddim_latents_all_step=self.ddim_clean2noisy_loop(init_latents,text_embeddings,context_shift=context_shift)
-        # else:
-        #     ddim_latents_all_step = self.ddim_clean2noisy_loop(init_latents_bcfhw, text_embeddings)
+        # ddim_latents_all_step = self.ddim_clean2noisy_loop(init_latents_bcfhw, text_embeddings)
+        if context_shift is not None:
+            print('use context_shift')
+            print(str(context_shift.shape))
+            ddim_latents_all_step=self.ddim_clean2noisy_loop(init_latents,text_embeddings,context_shift=context_shift)
+        else:
+            ddim_latents_all_step = self.ddim_clean2noisy_loop(init_latents_bcfhw, text_embeddings)
         return ddim_latents_all_step
     
     @torch.no_grad()
@@ -102,7 +102,8 @@ class DDIMSpatioTemporalStableDiffusionPipeline(SpatioTemporalStableDiffusionPip
         all_latent = [latent]
         latent = latent.clone().detach()
         print('Invert clean image to noise latents by DDIM and Unet')
-        # context_shift=rearrange(context_shift, "b c f h w -> ( b f ) c h w",f=8)
+        if context_shift is not None:
+            context_shift=rearrange(context_shift, "b c f h w -> ( b f ) c h w",f=8)
         for i in trange(len(self.scheduler.timesteps)):
             t = self.scheduler.timesteps[len(self.scheduler.timesteps) - i - 1]
             
